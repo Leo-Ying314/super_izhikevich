@@ -6,7 +6,7 @@ class ibCell(izh.izhCell):
     def __init__(self, stimVal):
         super().__init__(stimVal)
         # Define Neuron Parameters
-        self.celltype = 'Generic Izhikevich'  # Intrinsically Bursting
+        self.celltype = 'Intrinsically Bursting'  # Intrinsically Bursting
         self.C = 150
         self.vr = -75
         self.vt = -45

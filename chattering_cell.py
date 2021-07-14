@@ -2,11 +2,11 @@ import izhikevich_cells as izh
 import numpy as np
 import matplotlib.pyplot as plt
 
-class ccCell(izh.izhCell):
+class cCell(izh.izhCell):
     def __init__(self, stimVal):
         super().__init__(stimVal)
         # Define Neuron Parameters
-        self.celltype = 'Generic Izhikevich'  # Chattering
+        self.celltype = 'Chattering'  # Chattering
         self.C = 50
         self.vr = -60
         self.vt = -40
@@ -34,7 +34,7 @@ def plotMyData(somecell, upLim=1000):
 
 
 def createCell():
-    myCell = ccCell(stimVal=4000)
+    myCell = cCell(stimVal=4000)
     myCell.simulate()
     plotMyData(myCell)
 
